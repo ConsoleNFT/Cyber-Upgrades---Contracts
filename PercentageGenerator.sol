@@ -99,7 +99,7 @@ contract PercentageGenerator {
                        uint ratingNextCount = 0;
 
                        for (uint index=0; index < rarities.length; index++) {
-                                if(index < actualPosition) {
+                                if(index <= actualPosition) {
 									ratingNextCount = ratingNextCount + raritiesRating[rarity][index];
 								}
                         } 
